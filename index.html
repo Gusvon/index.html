@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Arraiá das Estrelas</title>
+
+  <!-- Estilos -->
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      padding: 0;
+      color: #2E4A3D; /* Cor de texto verde mais escuro, remetendo à vegetação do sertão */
+      background-color: #B5D9B1; /* Fundo suave em verde claro, lembrando o clima quente, porém com esperança de vida no sertão */
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Textura de madeira */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(46, 74, 61, 0.9); /* Verde escuro para header, criando uma sensação de acolhimento */
+      color: #F1F9F4; /* Um tom claro de verde para contraste com o fundo */
+      padding: 50px 0;
+      text-align: center;
+      border-bottom: 5px solid #F1F9F4;
+      position: relative;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      color: #F1F9F4;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #F1F9F4;
+      font-style: italic;
+      margin-top: -20px;
+    }
+
+    .content {
+      padding: 50px;
+      background-color: rgba(214, 247, 223, 0.8); /* Um tom suave de verde claro, mais harmônico com o fundo */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2, h3 {
+      color: #2E4A3D; /* Cor verde escuro para os títulos */
+      font-size: 2.5em;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .tendencias, .comidas, .musicas {
+      width: 30%;
+      padding: 30px;
+      background-color: rgba(240, 255, 240, 0.9); /* Fundo leve e verde, remete à leveza e simplicidade do sertão */
+      border: 1px solid #5C8A54; /* Cor verde suave para os bordos */
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      margin-top: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .tendencias:hover, .comidas:hover, .musicas:hover {
+      background-color: #5C8A54; /* Verde mais intenso para o hover, criando interação e dinamismo */
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .content li {
+      padding: 12px 0;
+      font-size: 1.3em;
+      color: #2E4A3D;
+      border-bottom: 1px solid #DDD;
+    }
+
+    footer {
+      background-color: #2E4A3D;
+      color: #F1F9F4;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.1em;
+      font-family: 'Merriweather', serif;
+    }
+
+    footer a {
+      color: #F1F9F4;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #FFF;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Efeito de fade-in para os elementos */
+    .fadeIn {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tendencias, .comidas, .musicas {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .tendencias.visible, .comidas.visible, .musicas.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>O Arraiá das Estrelas</h1>
+    <p>"O sertão é do tamanho do mundo", dizia Riobaldo.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="container">
+      <!-- Tendências Juninas -->
+      <div class="tendencias fadeIn">
+        <h2>Tendências Juninas no Sertão</h2>
+        <ul>
+          <li>Chapéu de couro, como o do "jagunço"</li>
+          <li>Camisa xadrez e botas, lembrando os vaqueiros</li>
+          <li>Vestido de chita, símbolo de resistência e autenticidade</li>
+          <li>São João, um "anjo da morte" e da festa ao mesmo tempo</li>
+        </ul>
+      </div>
+
+      <!-- Comidas -->
+      <div class="comidas fadeIn">
+        <h2>Comidas Típicas do Sertão</h2>
+        <ul>
+          <li>Queijo coalho e "pé-de-moleque"</li>
+          <li>Feijão verde com arroz, prato de sabedoria e simplicidade</li>
+          <li>Arroz com pequi, prato comum e místico, como o sertão</li>
+          <li>Suco de caju, que faz jus ao calor imenso da terra</li>
+        </ul>
+      </div>
+
+      <!-- Músicas -->
+      <div class="musicas fadeIn">
+        <h2>Músicas do Sertão: Forró e Baião</h2>
+        <ul>
+          <li>Forró de xaxado, como o som que embala o sertão</li>
+          <li>Xote de vaqueiro, que ecoa pelas veredas secas</li>
+          <li>Baião de dois, onde a alma do sertanejo transborda</li>
+          <li>A "Valsa do Sertão", que traz o mistério e a paz das montanhas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Imagem Estilizada -->
+    <div class="content fadeIn">
+      <img src="https://via.placeholder.com/800x500.png?text=Festa+Junina+no+Sertão" alt="Imagem do Sertão Veredas">
+    </div>
+
+    <!-- Citação Literária -->
+    <div class="content">
+      <h3>"O sertão é o que é, ou o que se imagina ser"</h3>
+      <p>- Guimarães Rosa, <i>Grande Sertão: Veredas</i></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 O Arraiá das Estrelas. Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:arraialdasestrelas2025@gmail.com">arraialdasestrelas2025@gmail.com</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Função para mostrar os elementos com animação
+    window.addEventListener('load', function() {
+      const elements = document.querySelectorAll('.tendencias, .comidas, .musicas');
+      elements.forEach(function(element) {
+        setTimeout(function() {
+          element.classList.add('visible');
+        }, 500);
+      });
+    });
+  </script>
+
+</body>
+</html>
